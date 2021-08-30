@@ -1,1 +1,1 @@
-freopen("output.txt","w",stdout);
+cout<< x-(x-j) ;
