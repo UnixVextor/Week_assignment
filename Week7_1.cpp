@@ -5,7 +5,6 @@ int main(){
     cin >> x >> y;
     int matrix1[x][y];
     int num,count = 0;
-    cout << y*x;
     for(int i = 0; i < (x * y)*2;i++){
         if(i<(y*x)){
             cin >> matrix1[i/y][i%y];
@@ -14,7 +13,6 @@ int main(){
             matrix1[i/y-x][i%y] += num;
         }
         
-        cout << "B" << i << endl;
     }
 
 cout  << "outout --------------------" << "\n" ; 
