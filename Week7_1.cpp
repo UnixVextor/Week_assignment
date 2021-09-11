@@ -4,15 +4,17 @@ int main(){
     int x,y;
     cin >> x >> y;
     int matrix1[x][y];
-    int num;
-
-    for(int i = 0; i < (y * x)*2;i++){
+    int num,count = 0;
+    cout << y*x;
+    for(int i = 0; i < (x * y)*2;i++){
         if(i<(y*x)){
-            cin >> matrix1[i/x][i%x];
-        }else{
+            cin >> matrix1[i/y][i%y];
+        }else {
             cin >> num;
-            matrix1[(i/x)-3][i%3] += num;
+            matrix1[i/y-x][i%y] += num;
         }
+        
+        cout << "B" << i << endl;
     }
 
 cout  << "outout --------------------" << "\n" ; 
