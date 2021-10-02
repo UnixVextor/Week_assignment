@@ -1,1 +1,1 @@
-cout<< x-(x-j) ;
+num
